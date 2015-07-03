@@ -1,0 +1,30 @@
+{
+    "name": "datartisan/danel",
+    "type": "library",
+    "description": "Danel PHP Library",
+    "keywords": ["datartisan", "danel"],
+    "homepage": "http://danel.com/",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "G_will",
+            "email": "g_will@ieqi.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Datartisan\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Datartisan\\Tests\\": "tests/"
+        }
+    }
+}
