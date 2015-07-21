@@ -33,9 +33,7 @@ class Danel {
         ];
 
         $dBase64 = $this->packData($dArray);
-
         $this->request($this->API_URL_EVENT, $dBase64);
-
         return;
     }
     
@@ -50,20 +48,14 @@ class Danel {
         ];
 
         $dBase64 = $this->packData($dArray);
-
         $this->request($this->API_URL_EVENT, $dBase64);
-
         return ;
     }
     
     public function request($apiUrl, $data)
     {
-        // url?d=querydata&ts
         $url = $apiUrl.'?d='.$data.'&'.time();
         $result = file_get_contents($url);
-
-        print_r($result);
-
         return;
     }
 
