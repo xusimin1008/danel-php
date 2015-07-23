@@ -48,7 +48,7 @@ class Danel {
         ];
 
         $dBase64 = $this->packData($dArray);
-        $this->request($this->API_URL_EVENT, $dBase64);
+        $this->request($this->API_URL_USER, $dBase64);
         return ;
     }
     
